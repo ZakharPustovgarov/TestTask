@@ -1,0 +1,3 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:Button text="Collect My Components" display-tooltip-when-elided="true" name="CollectButton" />
+</ui:UXML>
