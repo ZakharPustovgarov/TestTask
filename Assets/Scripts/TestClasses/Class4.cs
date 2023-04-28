@@ -8,6 +8,5 @@ namespace Assets.Scripts
 {
     internal class Class4 : Class1
     {
-        private int smth = 1;
     }
 }

@@ -16,13 +16,19 @@ public class ComponentCollector : MonoBehaviour
     [Space]
     [SerializeField] private List<Component> _myComponents = new List<Component>();
 
+    private void OnValidate()
+    {
+        classLayout.SetComponentsList(_myComponents);
+    }
+
     public void CollectMyComponents()
     {
         _myComponents.Clear();
 
         _myComponents = GetComponents<MonoBehaviour>().ToList<Component>();
 
-        classLayout.ShowList(_myComponents);
-    }
+        classLayout.SetComponentsList(_myComponents);
 
+        classLayout.ShowList();
+    }
 }

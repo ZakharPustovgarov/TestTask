@@ -23,8 +23,6 @@ namespace Assets.Scripts
 
             directoryPath += "Assets";
 
-            //Debug.Log($"Searching for {type.Name + ".cs"} in {directoryPath}");
-
             var files = Directory.GetFiles(directoryPath, type.Name + ".cs", SearchOption.AllDirectories);
 
             return files[0];

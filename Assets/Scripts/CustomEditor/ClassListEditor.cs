@@ -12,16 +12,17 @@ namespace Assets.Scripts
     {
         private static List<Component> _shownComponents;
 
-        public static void ShowGridWindow(List<Component> components, float windowWidth, float windowLength)
+        public static void ShowWindow(float windowWidth, float windowLength)
         {
-            //Debug.Log("Starting to open window");
-            _shownComponents = components;
             EditorWindow wnd = GetWindow<ClassListEditor>();
 
             wnd.minSize = new Vector2(windowWidth, windowLength);
             wnd.titleContent = new GUIContent("Class List");
+        }
 
-            //Debug.Log("Window opened");
+        public static void SetComponents(List<Component> components)
+        {
+            _shownComponents = components;
         }
 
         public void CreateGUI()
@@ -42,7 +43,6 @@ namespace Assets.Scripts
 
             classList.itemsChosen += OnComponentSelectionChange;
 
-            //Debug.Log("Gui for window created");
         }
 
         private void OnComponentSelectionChange(IEnumerable<object> selectedItems)
@@ -53,5 +53,6 @@ namespace Assets.Scripts
 
             CodeEditor.CurrentEditor.OpenProject(TypeUtility.ReturnFilePathByType(selectedComponent.GetType()), 0, 0);
         }
+
     }
 }
