@@ -11,7 +11,7 @@ namespace Assets.Scripts
 
         public override void ShowList(List<Component> components)
         {
-            Debug.Log("Invoking to show list");
+            //Debug.Log("Invoking to show list");
             ClassListEditor.ShowGridWindow(components, windowMinWidth, windowMinLength);
         }
     }

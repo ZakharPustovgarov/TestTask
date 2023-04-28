@@ -14,14 +14,14 @@ namespace Assets.Scripts
 
         public static void ShowGridWindow(List<Component> components, float windowWidth, float windowLength)
         {
-            Debug.Log("Starting to open window");
+            //Debug.Log("Starting to open window");
             _shownComponents = components;
             EditorWindow wnd = GetWindow<ClassListEditor>();
 
             wnd.minSize = new Vector2(windowWidth, windowLength);
             wnd.titleContent = new GUIContent("Class List");
 
-            Debug.Log("Window opened");
+            //Debug.Log("Window opened");
         }
 
         public void CreateGUI()
@@ -42,7 +42,7 @@ namespace Assets.Scripts
 
             classList.itemsChosen += OnComponentSelectionChange;
 
-            Debug.Log("Gui for window created");
+            //Debug.Log("Gui for window created");
         }
 
         private void OnComponentSelectionChange(IEnumerable<object> selectedItems)
