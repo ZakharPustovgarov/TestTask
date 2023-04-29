@@ -9,10 +9,10 @@
 
 ## Используемые классы
 
-- `ComponentCollector` - компонент для сбора всех MonoBehaviour на GameObject'e, к которому он прикреплён
-- `ComponentCollectorEditor` - класс Editor'а, который добавляет кнопку в инспекторе для класса ComponentCollector и обрабатывает её нажатие
-- `Class1, Class2, Class3, Class4, Class5` - компоненты для тестирования работы ComponentCollector
-- `ClassListLayout` - абстрактный ScriptableObject, который предоставляет методы для заполнения списка компонентов для показа и вызов открытия окна
-- `ListClassListLayout` - дочерний класс ClassListLayout, который вызывает открытия окна с компонентами через ListEditorWindow
-- `ListEditorWindow` - класс, который формирует окно и заполняет его переданными компонентами, а также обрабатывает двойное нажатия на элемент списка
+- `Assets\Scripts\ComponentCollector.cs` - компонент для сбора всех MonoBehaviour на GameObject'e, к которому он прикреплён
+- `Assets\Scripts\CustomEditor\ComponentCollectorEditor.cs` - класс Editor'а, который добавляет кнопку в инспекторе для класса ComponentCollector и обрабатывает её нажатие
+- `Assets\Scripts\TestClasses\Class1.cs, Class2.cs, Class3.cs, Class4.cs, Class5.cs` - компоненты для тестирования работы ComponentCollector
+- `Assets\Scripts\ScriptableObjects\ClassListLayout.cs` - абстрактный ScriptableObject, который предоставляет методы для заполнения списка компонентов для показа и вызов открытия окна
+- `Assets\Scripts\ScriptableObjects\ListClassListLayout.cs` - дочерний класс ClassListLayout, который вызывает открытия окна с компонентами через ListEditorWindow
+- `Assets\Scripts\CustomEditor\ListEditorWindow` - класс, который формирует окно и заполняет его переданными компонентами, а также обрабатывает двойное нажатия на элемент списка
 
