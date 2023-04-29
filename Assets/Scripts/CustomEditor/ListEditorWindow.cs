@@ -8,13 +8,13 @@ using UnityEngine.UIElements;
 
 namespace Assets.Scripts
 {
-    public class ClassListEditor : EditorWindow
+    public class ListEditorWindow : EditorWindow
     {
         private static List<Component> _shownComponents;
 
         public static void ShowWindow(float windowWidth, float windowLength)
         {
-            EditorWindow wnd = GetWindow<ClassListEditor>();
+            EditorWindow wnd = GetWindow<ListEditorWindow>();
 
             wnd.minSize = new Vector2(windowWidth, windowLength);
             wnd.titleContent = new GUIContent("Class List");

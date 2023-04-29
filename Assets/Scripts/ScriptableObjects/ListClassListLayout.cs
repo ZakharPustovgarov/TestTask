@@ -11,13 +11,13 @@ namespace Assets.Scripts
 
         public override void SetComponentsList(List<Component> components)
         {
-            ClassListEditor.SetComponents(components);
+            ListEditorWindow.SetComponents(components);
         }
 
         public override void ShowList()
         {
             //Debug.Log("Invoking to show list");
-            ClassListEditor.ShowWindow( windowMinWidth, windowMinLength);
+            ListEditorWindow.ShowWindow( windowMinWidth, windowMinLength);
         }
     }
 }
