@@ -10,7 +10,7 @@ namespace Assets.Scripts
 {
     public class ListEditorWindow : EditorWindow
     {
-        private static List<Component> _shownComponents;
+        private static List<MonoBehaviour> _shownComponents;
 
         public static void ShowWindow(float windowWidth, float windowLength)
         {
@@ -20,7 +20,7 @@ namespace Assets.Scripts
             wnd.titleContent = new GUIContent("Class List");
         }
 
-        public static void SetComponents(List<Component> components)
+        public static void SetComponents(List<MonoBehaviour> components)
         {
             _shownComponents = components;
         }

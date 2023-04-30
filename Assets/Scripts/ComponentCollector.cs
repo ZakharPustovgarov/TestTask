@@ -15,20 +15,20 @@ public class ComponentCollector : MonoBehaviour
 {
     public ClassListLayout classLayout;
     [Space]
-    [SerializeField] private List<Component> _myComponents = new List<Component>();
+    [SerializeField] private List<MonoBehaviour> _myComponents = new List<MonoBehaviour>();
 
     private void OnValidate()
     {
         classLayout.SetComponentsList(_myComponents);
     }
 
-    public void CollectMyComponents()
+    public void CollectMyMonoBehaviours()
     {
         _myComponents.Clear();
 
-        _myComponents = GetComponents<MonoBehaviour>().ToList<Component>();
+        _myComponents = GetComponents<MonoBehaviour>().ToList();
 
-        MakeListDistinct();
+        MakeMonoBehaviourListDistinct();
 
         classLayout.SetComponentsList(_myComponents);
 
@@ -36,7 +36,7 @@ public class ComponentCollector : MonoBehaviour
     }
 
 
-    private void MakeListDistinct()
+    private void MakeMonoBehaviourListDistinct()
     {
         for(int i = 0; i < _myComponents.Count - 1; i++)
         {

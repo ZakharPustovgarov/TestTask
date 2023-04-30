@@ -9,7 +9,7 @@ namespace Assets.Scripts
         public float windowMinWidth;
         public float windowMinLength;
 
-        public override void SetComponentsList(List<Component> components)
+        public override void SetComponentsList(List<MonoBehaviour> components)
         {
             ListEditorWindow.SetComponents(components);
         }

@@ -23,7 +23,7 @@ public class ComponentCollectorEditor : Editor
 
         var xmlButton = root.Q<Button>("CollectButton");
 
-        xmlButton.RegisterCallback<MouseUpEvent>((evt) => collector.CollectMyComponents());
+        xmlButton.RegisterCallback<MouseUpEvent>((evt) => collector.CollectMyMonoBehaviours());
 
         return root;
     }
