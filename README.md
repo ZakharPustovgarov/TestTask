@@ -14,5 +14,6 @@
 - `Assets\Scripts\TestClasses\Class1.cs, Class2.cs, Class3.cs, Class4.cs, Class5.cs` - компоненты для тестирования работы ComponentCollector
 - `Assets\Scripts\ScriptableObjects\ClassListLayout.cs` - абстрактный ScriptableObject, который предоставляет методы для заполнения списка компонентов для показа и вызов открытия окна
 - `Assets\Scripts\ScriptableObjects\ListClassListLayout.cs` - дочерний класс ClassListLayout, который вызывает открытия окна с компонентами через ListEditorWindow
-- `Assets\Scripts\CustomEditor\ListEditorWindow` - класс, который формирует окно и заполняет его переданными компонентами, а также обрабатывает двойное нажатия на элемент списка
+- `Assets\Scripts\CustomEditor\ListEditorWindow.cs` - класс, который формирует окно и заполняет его переданными компонентами, а также обрабатывает двойное нажатия на элемент списка
+- `Assets\Scripts\Utility\TypeUtility.cs` - утилитарный класс, используется для получения пути к файлу, содержащему MonoBehaviour
 
